@@ -1,0 +1,49 @@
+@use "variables" as v;
+
+/** Media Queries **/
+@mixin movil {
+	@media (min-width: v.$movil) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media (min-width: v.$tablet) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media (min-width: v.$desktop) {
+		@content;
+	}
+}
+@mixin desktopXL {
+	@media (min-width: v.$desktopxl) {
+		@content;
+	}
+}
+
+@mixin grid($columns, $spacing) {
+	display: grid;
+	gap: $spacing;
+	grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin bgImage($url, $fadingColor) {
+	background-image: linear-gradient($fadingColor 0%, $fadingColor 100%),
+		url($url);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+}
+
+@mixin heading {
+	background-image: url(../img/bg-title.png);
+	background-repeat: repeat-x;
+	background-position-y: center;
+	text-align: center;
+}
+
+@mixin text {
+	background-color: v.$white;
+	padding: 0 2rem;
+}

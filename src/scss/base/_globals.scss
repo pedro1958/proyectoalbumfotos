@@ -1,0 +1,65 @@
+@use "variables" as v;
+@use "base/mixins" as m;
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: v.$white;
+	font-family: v.$mainFont;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+ul {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+.separation {
+	margin-top: 35rem;
+}
+.container {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 4rem 0;
+
+	&__grid {
+		@include m.tablet {
+			display: grid;
+			grid-template-columns: 5fr 2fr;
+			column-gap: 2rem;
+		}
+	}
+}
+.heart {
+	color: v.$heart;
+}
+.visible {
+	display: none;
+}
+.error {
+	background-color: v.$delete;
+	border: 1px solid darken(v.$delete, 20%);
+}
+.success {
+	background-color: v.$success;
+	border: 1px solid darken(v.$success, 20%);
+}
+.photo img {
+	border: 0.4rem solid v.$white;
+	border-radius: 0.6rem;
+	-webkit-box-shadow: 0.3rem 0 0.3rem 0.3rem v.$lightGray;
+	box-shadow: 0.3rem 0 0.3rem 0.3rem v.$lightGray;
+}

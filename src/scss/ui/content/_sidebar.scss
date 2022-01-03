@@ -1,0 +1,51 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.sidebar {
+	//
+
+	&__content {
+		margin-bottom: 3rem;
+	}
+
+	&__heading {
+		margin-bottom: 1rem;
+	}
+	&__grid {
+		@include m.grid(2, 2rem);
+	}
+
+	&__image {
+		border: 4px solid v.$white;
+		transition: transform 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(110%);
+		}
+	}
+}
+
+.comment {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	column-gap: 2rem;
+
+	&__photo {
+		border: 2px solid v.$white;
+		transition: transform 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(110%);
+		}
+	}
+
+	&__text {
+		margin: 0;
+	}
+
+	&__author {
+		font-size: 1.3rem;
+		font-weight: 700;
+		text-align: right;
+	}
+}

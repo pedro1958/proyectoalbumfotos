@@ -1,0 +1,34 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.footer {
+	@include m.bgImage("../img/bg_footer.png", v.$secondaryOpacity);
+	border-top: 0.4rem solid v.$primary;
+	height: 30rem;
+	padding: 3rem 0;
+
+	&__grid {
+		//
+
+		@include m.tablet {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	&__link {
+		color: v.$white;
+	}
+
+	&__copyright {
+		color: v.$white;
+		font-size: 2.4rem;
+		margin: 6rem 0 0 0;
+		text-align: center;
+
+		@include m.tablet {
+			margin-top: 0;
+		}
+	}
+}

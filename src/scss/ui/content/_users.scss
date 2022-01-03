@@ -1,0 +1,50 @@
+@use "base/mixins" as m;
+
+.users {
+	//
+
+	&__layout {
+		width: 100%;
+
+		@include m.tablet {
+			max-width: 50rem;
+			margin: 0 auto;
+		}
+	}
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__button {
+		margin: 1rem 0;
+	}
+}
+
+.user {
+	//
+
+	@include m.tablet {
+		display: grid;
+		column-gap: 2rem;
+		grid-template-columns: 3fr 1fr;
+		align-items: center;
+	}
+
+	&__content {
+		@include m.grid(1, 2rem);
+
+		@include m.tablet {
+			@include m.grid(2, 2erm);
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__button {
+		text-align: center;
+	}
+}

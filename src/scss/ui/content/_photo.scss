@@ -1,0 +1,41 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.photo {
+	// padding: 5rem 0;
+
+	&__heading {
+		@include m.heading;
+	}
+
+	&__heading--text {
+		@include m.text;
+	}
+
+	&__content {
+		background-color: v.$white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 1.5rem;
+	}
+
+	&__comments {
+		padding: 2rem;
+	}
+
+	&__block {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__grid {
+		padding: 3rem;
+	}
+
+	&__comment {
+		border-bottom: 1px solid v.$lightGray;
+		margin-bottom: 1rem;
+	}
+}

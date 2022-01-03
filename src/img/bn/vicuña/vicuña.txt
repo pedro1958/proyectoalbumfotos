@@ -1,0 +1,28 @@
+ El volumen de la unidad J es Trabajos
+ El n£mero de serie del volumen es: 3852-EF22
+
+ Directorio de J:\html\Curso CSS y SASS Juan Pablo\19-album\src\img\bn\vicu¤a
+
+30-11-2021  19:49    <DIR>          .
+30-11-2021  19:49    <DIR>          ..
+28-11-2021  15:46           683.426 Anochecer en Vicu¤a.jpg
+28-11-2021  15:46           673.188 Arbol muerto.jpg
+13-02-2007  21:07         1.237.766 El Pangue.jpg
+13-02-2007  21:35           656.736 Espino.jpg
+28-11-2021  15:45           777.840 MArroyo Elquino- Camino a Cochihuaz.jpg
+13-02-2007  21:36           602.641 Nubes.jpg
+04-02-2007  19:10           481.268 Osorno-Rahue.jpg
+28-11-2021  15:48           995.100 Oto¤o-Las Placetas.jpg
+13-02-2007  21:37           709.498 Peralillo.jpg
+13-02-2007  22:31         1.117.269 Pisco Elqui.jpg
+07-02-2007  14:18           765.349 Primavera.jpg
+13-02-2007  22:31           934.328 Rio Elqui-.jpg
+07-02-2007  14:19         1.150.133 Rosa.jpg
+13-02-2007  20:53           874.037 Tranque La Laguna.jpg
+20-04-2007  05:17         1.558.274 Vertiente Fdo Miraflores.jpg
+30-11-2021  19:49               170 vicu¤a.txt
+
+ Directorio de J:\html\Curso CSS y SASS Juan Pablo\19-album\src\img\bn\vicu¤a
+
+              16 archivos     13.217.023 bytes
+               2 dirs  152.945.860.608 bytes libres

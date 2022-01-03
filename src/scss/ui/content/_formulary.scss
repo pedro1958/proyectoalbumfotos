@@ -1,0 +1,92 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.form {
+	background-color: v.$white;
+	margin: 0 auto;
+	padding: 3rem 0;
+	width: 60rem;
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__messages {
+		margin: 0 auto 2rem auto;
+		padding: 0 2rem;
+		position: relative;
+		width: 85%;
+	}
+
+	&__icon {
+		position: absolute;
+		right: 0;
+	}
+
+	&__message {
+		color: v.$white;
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__grid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__formulary {
+		border: 1px solid v.$lightGray;
+		border-radius: 1rem;
+		padding: 2rem;
+		width: 80%;
+	}
+
+	&__group {
+		margin-bottom: 1.5rem;
+	}
+
+	&__radios {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	&__text {
+		color: v.$black;
+		display: inline-block;
+		font-weight: 700;
+		margin-bottom: 0.5rem;
+		text-align: center;
+	}
+
+	&__label {
+		display: block;
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	&__input {
+		border: 1px solid v.$primary;
+		display: block;
+		padding: 2rem;
+		width: 100%;
+
+		&:focus {
+			border: 0.2rem solid v.$primary;
+			outline: none;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		margin: 2rem 0 0 2rem;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			color: v.$primary;
+			font-weight: 700;
+		}
+	}
+}

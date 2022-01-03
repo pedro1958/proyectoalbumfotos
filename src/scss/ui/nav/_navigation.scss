@@ -1,0 +1,23 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+
+	@include m.tablet {
+		flex-direction: row;
+	}
+
+	&__link {
+		color: v.$white;
+		font-size: 2.4rem;
+		transition: color 0.3s;
+
+		&:hover {
+			color: v.$primary;
+		}
+	}
+}

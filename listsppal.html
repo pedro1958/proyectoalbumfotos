@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Album fotografico de PAA</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+			integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="dist/css/app.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__grid container">
+				<div class="header__logo">
+					<a href="index.html" class="header__link">
+						<h1>Aros</h1>
+					</a>
+				</div>
+				<nav class="navigation">
+					<a href="#" class="navigation__link">Iniciar Sesión</a>
+					<a href="#" class="navigation__link">Registrarse</a>
+					<a href="#" class="navigation__link">Cerrar Sesión</a>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<main class="items">
+				<h1 class="items__heading">Albumnes</h1>
+				<div class="items__buttons">
+					<a href="formalbum.html" class="btn btn btn-info">
+						<i class="far fa-images"></i> Nuevo Album
+					</a>
+				</div>
+				<div class="items__grid">
+					<div class="item">
+						<div class="item__image photo">
+							<a href="listsphotos.html">
+								<img src="dist/img/bn/Vicuña.jpg" alt="" class="item__photo" />
+							</a>
+						</div>
+						<h3 class="item__heading">Vicuña</h3>
+						<div class="item__operations">
+							<button class="btn btn-edit">
+								<i class="fas fa-pencil-alt"></i> Editar Album
+							</button>
+							<button class="btn btn-edit">
+								<i class="fas fa-camera"></i> Editar Imagen
+							</button>
+							<button class="btn btn-delete">Eliminar</button>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__image photo">
+							<a href="#">
+								<img
+									src="dist/img/color/amalilis.jpg"
+									alt=""
+									class="item__photo"
+								/>
+							</a>
+						</div>
+						<h3 class="item__heading">Amarilis</h3>
+						<div class="item__operations">
+							<button class="btn btn-edit">
+								<i class="fas fa-pencil-alt"></i> Editar Album
+							</button>
+							<button class="btn btn-edit">
+								<i class="fas fa-camera"></i> Editar Imagen
+							</button>
+							<button class="btn btn-delete">Eliminar</button>
+						</div>
+					</div>
+					<div class="item">
+						<div class="item__image photo">
+							<a href="#">
+								<img
+									src="dist/img/color/iceberg_serrano.jpg"
+									alt=""
+									class="item__photo"
+								/>
+							</a>
+						</div>
+						<h3 class="item__heading">Paisajes</h3>
+						<div class="item__operations">
+							<button class="btn btn-edit">
+								<i class="fas fa-pencil-alt"></i> Editar Album
+							</button>
+							<button class="btn btn-edit">
+								<i class="fas fa-camera"></i> Editar Imagen
+							</button>
+							<button class="btn btn-delete">Eliminar</button>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

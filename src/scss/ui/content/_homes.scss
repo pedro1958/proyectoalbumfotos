@@ -1,0 +1,64 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.homes {
+	//
+
+	&__heading {
+		@include m.heading;
+	}
+
+	&__heading--text {
+		@include m.text;
+	}
+
+	&__subheading {
+		text-align: center;
+	}
+
+	&__grid {
+		@include m.grid(1, 2rem);
+
+		@include m.tablet {
+			@include m.grid(3, 2rem);
+		}
+	}
+}
+
+.home {
+	//
+
+	&__photo {
+		transition: transform 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(110%);
+		}
+	}
+
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 1rem;
+	}
+
+	&__heading {
+		font-weight: 700;
+	}
+
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+
+	&__clock {
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+
+	&__clock--normal {
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+}

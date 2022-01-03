@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Album fotografico de PAA</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+			integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="dist/css/app.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__grid container">
+				<div class="header__logo">
+					<a href="index.html" class="header__link">
+						<h1>Aros</h1>
+					</a>
+				</div>
+				<nav class="navigation">
+					<a href="#" class="navigation__link">Iniciar Sesión</a>
+					<a href="#" class="navigation__link">Registrarse</a>
+					<a href="#" class="navigation__link">Cerrar Sesión</a>
+				</nav>
+			</div>
+		</header>
+		<div class="container">
+			<main class="form">
+				<h1 class="form__heading">Formulario Album</h1>
+				<div class="form__grid">
+					<form class="form__formulary">
+						<div class="form__group">
+							<label for="image" class="form__label">Imagen</label>
+							<input type="file" name="image" id="image" class="form__input" />
+						</div>
+						<div class="form__group">
+							<label for="title" class="form__label">Titulo</label>
+							<input
+								type="text"
+								name="title"
+								id="title"
+								class="form__input"
+								placeholder="Designa un titulo para el album"
+							/>
+						</div>
+						<div class="form__group">
+							<label for="format" class="form__label">Formato</label>
+							<div class="form__radios">
+								<div class="form__radio">
+									<span class="form__text"> Blanco y Negro </span>
+									<input
+										type="radio"
+										name="formay"
+										id="format"
+										value="bn"
+										class="form__input"
+									/>
+								</div>
+								<div class="form__radio">
+									<span class="form__text">Color</span>
+									<input
+										type="radio"
+										name="formay"
+										id="format"
+										value="color"
+										class="form__input"
+									/>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-info btn-block">
+							Guardar
+						</button>
+					</form>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

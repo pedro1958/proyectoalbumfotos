@@ -1,0 +1,68 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: v.$secondaryOpacity;
+	display: flex;
+	opacity: 0;
+	pointer-events: none;
+	transition: opaciy 0.6s 0.9s;
+	--transform: translateY(-100vh);
+	--transition: transform 0.8s;
+
+	&--show {
+		opacity: 1;
+		pointer-events: unset;
+		transition: opaciy 0.6s;
+		--transform: translateY(0);
+		--transition: transform 0.8s 0.8s;
+	}
+
+	&__container {
+		background-color: v.$white;
+		border-radius: 0.6rem;
+		display: grid;
+		gap: 1rem;
+		grid-auto-columns: 100%;
+		margin: auto;
+		max-width: 600px;
+		padding: 2rem 1.5rem;
+		place-items: center;
+		transform: var(--transform);
+		transition: var(--transition);
+		width: 90%;
+
+		@include m.tablet {
+			padding: 3rem 2.5rem;
+		}
+	}
+
+	&__image {
+		max-width: 30rem;
+		width: 90%;
+	}
+
+	&__links {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 25rem;
+
+		@include m.tablet {
+			width: 50rem;
+		}
+	}
+
+	&__heading {
+		font-size: 2rem;
+
+		@include m.tablet {
+			font-size: 2.5rem;
+		}
+	}
+}

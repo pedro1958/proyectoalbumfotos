@@ -1,0 +1,70 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.items {
+	//
+
+	&__heading {
+		text-align: center;
+	}
+
+	&__buttons {
+		margin: 2rem 0;
+
+		@include m.tablet {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	&__link {
+		display: block;
+		margin-bottom: 2rem;
+		width: 100%;
+
+		@include m.tablet {
+			display: inline-block;
+			width: auto;
+		}
+	}
+
+	&__grid {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+	}
+}
+
+.item {
+	//
+
+	@include m.tablet {
+		display: grid;
+		grid-template-columns: 2fr 3fr 3fr;
+		column-gap: 2rem;
+		align-items: center;
+	}
+
+	&__image {
+		//
+
+		@include m.tablet {
+			width: 30%;
+		}
+	}
+
+	&__heading {
+		font-weight: 700;
+		text-align: center;
+	}
+
+	&__operations {
+		//
+
+		@include m.tablet {
+			@include m.grid(3, 1rem);
+		}
+	}
+}

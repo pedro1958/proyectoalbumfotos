@@ -1,0 +1,93 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.btn {
+	border: none;
+	border-radius: 0.5rem;
+	box-shadow: none;
+	cursor: pointer;
+	font-weight: 700;
+	padding: 1rem 1.5rem;
+	text-align: center;
+}
+
+.btn-block {
+	width: 100%;
+
+	@include m.tablet {
+		width: auto;
+	}
+}
+
+.btn-info,
+.btn-edit,
+.btn-delete,
+.btn-icon,
+.btn-default,
+.btn-success {
+	color: v.$white;
+}
+
+.btn-edit,
+.btn-default,
+.btn-success,
+.btn-delete {
+	display: inline-block;
+}
+
+.btn-info {
+	background-color: v.$primary;
+}
+
+.btn-edit {
+	background-color: v.$edit;
+}
+
+.btn-default {
+	background-color: v.$gray;
+}
+
+.btn-success {
+	background-color: v.$success;
+}
+
+.btn-delete {
+	background-color: v.$delete;
+}
+
+.btn-icon {
+	background-color: transparent;
+}
+
+.btn-info:hover,
+.btn-edit:hover,
+.btn-delete:hover,
+.btn-default:hover,
+.btn-success:hover {
+	background-color: v.$white;
+}
+
+.btn-info:hover {
+	border: 1px solid v.$primary;
+	color: v.$primary;
+}
+
+.btn-edit:hover {
+	border: 1px solid v.$edit;
+	color: v.$edit;
+}
+
+.btn-delete:hover {
+	border: 1px solid v.$delete;
+	color: v.$delete;
+}
+
+.btn-default:hover {
+	border: 1px solid v.$gray;
+	color: v.$gray;
+}
+
+.btn-success:hover {
+	border: 1px solid v.$success;
+	color: v.$success;
+}
